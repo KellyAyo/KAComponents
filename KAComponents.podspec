@@ -9,22 +9,34 @@
 Pod::Spec.new do |s|
 
 #1.
-s.name               = "KAComponents"
+#s.name               = "KAComponents"
+s.name             = 'KAComponents'
+
 #2.
-s.version            = "1.0.0"
+s.version            = '1.0.0'
+
 #3.
-s.summary         = "iOS Swift Productivity Components"
+s.summary         = 'iOS Swift Productivity Components'
+
 #4.
-s.homepage        = "http://www.kellyayo.com"
+s.homepage        = 'http://www.kellyayo.com'
+
 #5.
-s.license              = "MIT"
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+
 #6.
-s.author               = "KellyAyo"
+s.author           = { 'Phillip Kelly-Ayo' => 'atelierpka@gmail.com' }
+
 #7.
-s.platform            = :ios, "10.0"
+#s.platform            = :ios, "10.0"
+
 #8.
-s.source              = { :git => "https://github.com/KellyAyo/KAComponents.git", :tag => "1.0.0" }
+s.source              = { :git => "https://github.com/KellyAyo/KAComponents.git", :tag => s.version.to_s }
+
 #9.
-s.source_files     = "KAComponents", "KAComponents/**/*.{h,m,swift}"
+s.ios.deployment_target = '9.1'
+
+#10.
+s.source_files     = 'KAComponents/Classes/**/*'
 
 end
